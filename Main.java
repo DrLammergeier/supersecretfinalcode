@@ -1,5 +1,6 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
 public class Main{
    public static void main(String[] args){
       Scanner in = new Scanner(System.in);
@@ -96,16 +97,20 @@ public class Main{
                }
                
                
-               else{
+               else
+               {
                   file = get_name(in);
-                  if(file.equals("n")){
+                  if(file.equals("n"))
+                  {
                      break;
                   }
-                  else{
+                  else
+                  {
                      message = ReadWrite.read(ReadWrite.open_file(file,in));
+                     
                   }
-                  break;
-                  }
+                  //break;
+               }
                 
                 //end file message
                 Caesar.printDistr(Caesar.letterDistr(message));
@@ -171,9 +176,9 @@ public class Main{
             return "n";
          }
 		}
-      else{
-          //file;
-          
+      else
+      {
+          //file;      
       }
       return file;
    }//end get_name method
